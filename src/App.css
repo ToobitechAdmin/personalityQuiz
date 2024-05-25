@@ -1,0 +1,52 @@
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.scrolling-text {
+  animation: scroll-left 10s linear infinite;
+}
+
+
+.app {
+  background-image: url(/background_white_pattern.jpg);
+  background-repeat: repeat;
+}
+
+@keyframes orbit {
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg, -50%);
+  }
+}
+
+/* Style for the orbit container */
+.orbit-container {
+  animation: spin-right 10s linear infinite;
+}
+
+.custom-animate-spin {
+  position: absolute;
+  animation: spin-right 10s linear infinite;
+}
+
+/* .home_banner:hover .orbit-container {
+  animation-play-state: paused;
+} */
+
+@keyframes spin-right {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}

@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: BaskVill, Times, serif;
+        font-weight: 400;
+        src: url(/fonts/BaskVill.ttf) format("ttf");
+    }
+}
